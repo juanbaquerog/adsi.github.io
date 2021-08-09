@@ -1,0 +1,56 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>datos para ingreso</title>
+</head>
+<body>
+    <form action="http://www.example.com/subscribe.php">
+        <fieldset>
+            <legend>DATOS BASICOS</legend>
+            <label>nombre completo: <br/>
+                <input type="text" name="name"></label><br/>
+            <label>email: <br/>
+                 <input type="text" name="email"> </label> <br/>
+            <label> telefono movil: <br/>
+                 <input type="text" name="mobile"> </label> <br/>
+            <label>telefono fijo: <br/>
+                <input type="text" name="telephone"></label> <br/>
+            <label>direccion<br/>
+                <input type="text" name="direccion"></label> <br/>
+            <label>edad<br/>
+                <input type="text" name="edad"></label> <br/>
+        </fieldset>
+        <fieldset>
+            <legend>informacion de deportes</legend>
+            <p>seleccione su deporte favorito:
+                <br />                   
+                <input type="radio" name="genre" value="futbol" checked="checked"/> futbol
+                <input type="radio" name="genre" value="voleibol" /> voleibol
+                <input type="radio" name="genre" value="tenis" /> tenis
+            <p>tocas alguno delos siguientes deportes  que hayas practicado(puede seleccionar mas de una opcion manteniendo presionada la tecla control)</p>
+                <select name="intruments" size="3" multiple="multiple">
+                    <option value="baloncesto" selected="selected">baloncesto</option>
+                    <option value="rugby">rugby</option>
+                    <option value="beisbol" selected="selected">beisbol</option>
+                    <option value="golf">golf</option>
+                </select>                   
+        </fieldset>
+        <fieldset>
+            <p>descripcion suya</p>
+            <textarea name="descripcion" id="" cols="30" rows="4"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>documentos</legend>
+            <p>sube fotocopia de tu documento</p>
+            <input type="file" name="copiadocumento"> <br/> 
+            <input type="submit" value="upload">   
+        </fieldset>
+        <fieldset>
+            <legend>subscribe</legend>
+            <input type="image" src="./imagenes/suscribite.jpg"
+            width="100" height="100"/>    
+        </fieldset>
+
+    </form>
+</body>
+</html>
